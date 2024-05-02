@@ -35,25 +35,22 @@
                 <div class="relative">
                     <img src="images/background.png" alt="Background">
                 </div>
-                <nav
-                    class="bg-red-700 text-white flex absolute top-20 right-4 justify-between left-56 items-center text-lg mt-4 ">
-                    <ul class="flex">
-                        <li class="hover:bg-gray-500 hover:bg-opacity-50"><a href="#"
-                                class="inline-block py-4 px-6">Portifolio</a></li>
-                        <li class="hover:bg-gray-500 hover:bg-opacity-50"><a href="#"
-                                class="inline-block py-4 px-6">Industries</a></li>
-                        <li class="hover:bg-gray-500 hover:bg-opacity-50"><a href="#"
-                                class="inline-block py-4 px-6">Customers</a></li>
-                        <li class="hover:bg-gray-500 hover:bg-opacity-50"><a href="#"
-                                class="inline-block py-4 px-6">About us</a></li>
-                        <li class="hover:bg-gray-500 hover:bg-opacity-50"><a href="#"
-                                class="inline-block py-4 px-6">Careers</a></li>
+                <nav class="bg-red-700 text-white flex absolute top-20 right-4 md:justify-between md:left-56 items-center text-lg mt-4 ">
+                    <ul class="hidden md:flex"> 
+                        <li class="hover:bg-gray-500 hover:bg-opacity-50"><a href="#" class="inline-block py-4 px-6">Portfolio</a></li>
+                        <li class="hover:bg-gray-500 hover:bg-opacity-50"><a href="#" class="inline-block py-4 px-6">Industries</a></li>
+                        <li class="hover:bg-gray-500 hover:bg-opacity-50"><a href="#" class="inline-block py-4 px-6">Customers</a></li>
+                        <li class="hover:bg-gray-500 hover:bg-opacity-50"><a href="#" class="inline-block py-4 px-6">About us</a></li>
+                        <li class="hover:bg-gray-500 hover:bg-opacity-50"><a href="#" class="inline-block py-4 px-6">Careers</a></li>
                     </ul>
-
-                    <div class="bg-red-800 inline-block py-6 px-6 hover:bg-gray-700 hover:cursor-pointer">
-                        <img src="images/search.png" alt="Search icon" class="">
+                
+                    <div class="md:hidden"> 
+                        <div class="bg-red-800 inline-block py-6 px-6 hover:bg-gray-700 hover:cursor-pointer">
+                            <img src="images/search.png" alt="Search icon" class="">
+                        </div>
                     </div>
                 </nav>
+                
 
                 <div class="absolute px-3 top-1/2 flex justify-between gap-16">
                     <div class="border-8 border-red-700 text-white w-1/3 px-4 py-20">
@@ -85,8 +82,8 @@
             <!-- Learn more about our portifolio section -->
             <section>
                 <h1 class="text-center font-semibold text-3xl pt-8 pb-6">Learn more about our portfolio</h1>
-                <div class="flex px-8 gap-5">
-                    <div class="w-1/4 bg-gray-200 relative  flex flex-col justify-between">
+                <div class="flex flex-wrap px-8 gap-5 sm:flex-nowrap">
+                    <div class="w-full sm:w-1/4 bg-gray-200 relative flex flex-col justify-between">
                         <img src="images/AS-388785133-Home-Portfolio-Cloud.png" alt="Portifolio">
                         <div class="px-3 ">
                             <span class="absolute top-3 px-3 bg-gray-100">Cloud</span>
@@ -104,7 +101,7 @@
                         </div>
                     </div>
 
-                    <div class="w-1/4 bg-gray-200 relative flex flex-col justify-between">
+                    <div class="w-full sm:w-1/4 bg-gray-200 relative flex flex-col justify-between">
                         <img src="images/fight.png" alt="Portifolio">
                         <div class="px-3">
                             <span class="absolute top-3 px-3 bg-gray-100">Cyber Security Check</span>
@@ -121,7 +118,8 @@
                         </div>
                     </div>
 
-                    <div class="w-1/4 bg-gray-200 relative flex flex-col justify-between">
+                    <div class="w-full sm:w-1/4 bg-gray-200 relative flex flex-col justify-between">
+
                         <img src="images/handsonkeyboard.png" alt="Portifolio">
                         <div class="px-3">
                             <div class="py-3">
@@ -133,7 +131,7 @@
                             <div class="bg-red-700 text-white py-3 px-10 float-right my-4"><a href="#">More</a></div>
                         </div>
                     </div>
-                    <div class="w-1/4 bg-gray-200 relative flex flex-col justify-between">
+                    <div class="w-full sm:w-1/4 bg-gray-200 relative flex flex-col justify-between">
                         <img src="images/desktop.png" alt="Portifolio">
                         <div class="px-3">
                             <div class="py-3">
@@ -150,15 +148,15 @@
 
             </section>
 
-            <section>
+            <section class="sm:px-3 md:px-6 lg:px-12">
                 <div class="bg-zinc-100 mt-16">
                 <h1 class="text-center font-semibold text-3xl pt-8 pb-6">Materna is behind it</h1>
-                <div class="grid grid-cols-2 bg-white m-12">
+                <div class="grid grid-cols-1 sm:grid-cols-2 bg-white m-12">
                     <div class="relative">
                         <img src="images/robots.png" alt="">
                         <span class="absolute top-3 px-3 bg-gray-100 ml-3">Denver Airport</span>
                     </div>
-                    <div class="flex flex-col justify-between mr-8 ">
+                    <div class="flex flex-col justify-between sm:mr-8">
                         
                         <div class="mt-14">
                             <a href="#" class="text-gray-700 hover:underline text-3xl">Denver International Airport with automated baggage check-in
@@ -171,13 +169,13 @@
                         </div>
                         
                         <div>
-                            <a href="#" class="  border-solid bg-red-700 text-white p-3 hover:underline float-right ">More about the Self Bag Drop project</a>
+                            <a href="#" class="  border-solid bg-red-700 text-white p-3 hover:underline mb-4 float-right ">More about the Self Bag Drop project</a>
                         </div>
                         
                     </div>
 
                 </div>
-                <div class="grid grid-cols-4 m-12 gap-4 ">
+                <div class="grid grid-cols-1 sm:grid-cols-4 m-12 gap-4">
                     <div class="relative">
                         <img src="images/robots.png" alt="">
                         <img src="images/next-upright.png" alt="" class="absolute top-1 ml-1 transform rotate-360">
@@ -196,6 +194,9 @@
                     </div>
                     
                 </div>
+
+                
+
                 <div class="flex pl-12 gap-7 text-red-700 pb-8">
 
                     <div class="flex gap-2 hover:text-gray-700"> 
@@ -205,6 +206,7 @@
                           </svg>
                           
                     </div>
+                    
                 
                     <div class="flex gap-2 hover:text-gray-700">
                         <span class="flex gap-3 items-center  hover:underline transition"><a href="#">recommend </a></span>
@@ -221,8 +223,84 @@
             </div>
             </section>
 
-            <footer>
-                
+            <footer class="sm:flex sm:flex-col"> 
+                <div class="bg-gray-700 text-white p-8">
+                    <div class="sm:flex justify-between pt-24 px-3 pb-12">
+                        <div class="flex flex-col gap-10 sm:w-2/5">
+                            <h1 class="text-2xl">Materna Information & Communications SE</h1>
+                            <p>Voßkuhle 37 <br>44141 Dortmund, Germany</p>
+                            <div>
+                                <p><a href="tel:+49 231 5599-00">+49 231 5599-00</a><i class="fa fa-phone" aria-hidden="true"></i></p>
+                                <p><a href="mailto:marketing@materna.group">marketing@materna.group</a><i class="fa fa-envelope-o" aria-hidden="true"></i></p>
+                            </div>
+                            
+                        </div>
+        
+                        <div class="sm:w-2/5">
+                            <h1 class="text-center text-2xl pb-3">We are social</h1>
+                            <div class="grid grid-cols-4 gap-6">
+                                <div class="bg-gray-500 hover:bg-red-600"><img src="images/footer_social_twitter.png" alt="Twitter"></div>
+                                <div class="bg-gray-500 hover:bg-red-600"><img src="images/footer_social_facebook.png" alt="Facebook"></div>
+                                <div class="bg-gray-500 hover:bg-red-600"><img src="images/footer_social_rss.png" alt="Blog"></div>
+                                <div class="bg-gray-500 hover:bg-red-600"><img src="images/footer_social_xing.png" alt="Xing"></div>
+                                <div class="bg-gray-500 hover:bg-red-600"><img src="images/footer_social_youtube.png" alt="YouTube"></div>
+                                <div class="bg-gray-500 hover:bg-red-600"><img src="images/footer_social_linkedin.png" alt="Linkedin"></div>
+                                <div class="bg-gray-500 hover:bg-red-600"><img src="images/footer_social_instagram.png" alt="Instagram"></div>
+                                <div class="bg-gray-500 hover:bg-red-600"><img src="images/footer_social_anchor.png" alt="Spotify"></div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="border-red-600 border-t-2 flex px-3 justify-between pt-16 pb-8">
+    
+                        <div class="sm:w-3/5 flex justify-between">
+                            <div class="flex flex-col gap-3">
+                                <h1 class="text-2xl pb-3">Portifolio</h1>
+                                <div><a href="#">Focus Areas</a></div>
+                                <div><a href="#">Com­pe­ten­cies</a></div>
+                                <div><a href="#">Tech­nolo­gies</a></div>
+                                <div><a href="#">In­dus­tries</a></div>
+                            </div>
+        
+                            <div class="flex flex-col gap-3">
+                                <h1 class="text-2xl pb-3">About us</h1>
+                                <div><a href="#">Ma­ter­na Group</a></div>
+                                <div><a href="#">Man­age­ment</a></div>
+                                <div><a href="#">Lo­ca­tions</a></div>
+                                <div><a href="#">Part­ners</a></div>
+                                <div><a href="#">Sus­tain­abil­i­ty and CSR</a></div>
+                                <div><a href="#">Re­search and De­vel­op­ment</a></div>
+                            </div>
+    
+                            <div class="flex flex-col gap-3">
+                                <h1 class="text-2xl pb-3">Customers</h1>
+                                <div><a href="#">Customers</a></div>
+                            </div>
+        
+        
+                            <div class="flex flex-col gap-3">
+                                <h1 class="text-2xl pb-3">Careers</h1>
+                                <div><a href="#">Careers</a></div>
+                            </div>
+                        </div>
+                        
+    
+                        <div class="sm:w-2/5 flex flex-col gap-3">
+                            <h1 class="text-2xl pb-4">Service</h1>
+                            <div><a href="#">Ma­ter­na Sup­port</a></div>
+                            <div><a href="#">Con­tact</a></div>
+                            <div><a href="#">Im­print & Copy­right</a></div>
+                            <div><a href="#">Com­pli­ance at Ma­ter­na</a></div>
+                            <div><a href="#">Da­ta pri­va­cy state­ment</a></div>
+                            <div><a href="#">Da­ta pri­va­cy in­for­ma­tion for cus­tomers</a></div>
+                            <div><a href="#">Da­ta pri­va­cy in­for­ma­tion for sup­pli­ers</a></div>
+                            <div><a href="#">Sitemap</a></div>
+                        </div>   
+                    </div>
+                    <div class="px-3 py-9 bg-gray-800">
+                        <p>&copy; Materna 2024</p>
+                    </div>
+                    </div>
             </footer>
 
         </main>
